@@ -1,0 +1,259 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+   position: sticky;
+    top:0;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.navbar ul{
+    display:flex;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 1.1rem;
+}
+.navbar ul li a{
+    padding:5px 20px;
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid yellow;
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height:800px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(92, 146, 170, 0.5);
+    color:white;
+   
+}
+#home::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    background: url('img4.jpeg') ;
+    background-repeat: no-repeat;
+    background-image: cover;
+    height:700px;
+    width:100%;
+    z-index: -1;
+    opacity:0.7;
+}
+.heading{
+    color:white;
+    font-size: 3rem;
+    text-align:center;
+    transform: none;
+   font-family: Arial, Helvetica, sans-serif;
+
+    
+
+}
+.hire-btn{
+	border:2px solid #373636;
+	color:#373636;
+	background-color:transparent rgb(69, 236, 69);
+    margin-bottom: 10px ;
+    
+	
+}
+.hire-btn:hover{
+    color: aqua;
+    cursor: pointer;
+    background-color: blueviolet;
+    
+}
+.down-cv{
+	background-color:#f5f3f6;
+	color:#160e0e;	
+	border:none;
+}
+.down-cv:hover{
+    color: aqua;
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+.Home button{
+	width:130px;
+	height:42px;
+	border-radius:10px;
+	font-family:calibri;
+	font-weight:bold;
+	font-size: 14px;
+	outline:none;
+	margin:0px 15px;
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+button:active{
+	transform:scale(1.1);
+}
+/* portfolio section*/
+#portfolio{
+    display:flex;
+    flex-direction: column;
+    background-color: #000000dc;
+}
+#portfolio h1{
+    margin:60px;
+}
+.gallary{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.gallary img{
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    margin: 10px;
+
+}
+.gallary img:hover{
+    background-color: white;
+    cursor:pointer;
+}
+
+/* education section */
+#education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    color:white;
+   
+}
+#education h1{
+    margin: 100px;
+    color:white;
+}
+.columns{
+    display:grid;
+    grid-template-columns: auto auto;
+    padding-left:50px ;
+}
+.box{
+    height: 300px;
+    width:700px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius:20px ;
+    margin:10px;
+}
+.box h2{
+    color: yellowgreen;
+    font-size: 2rem;
+    margin-bottom:40px ;
+}
+.box p{
+    color: white;
+    font-size: 1.1rem;
+
+
+}
+/* about section */
+#about{
+    
+        display: flex;
+        flex-direction: column;
+        height:800px;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        color:white;
+
+}
+
+.about{
+    display:flex;
+    
+    
+}
+#about h1{
+    color:black;
+    margin:55px;
+}
+.about img{
+    width: 500px;
+    height:400px
+    padding:0px 30px;
+}
+.name{
+    padding:10px;
+
+}
+.name h2{
+    font-size:2rem;
+}
+.name p{
+    font-size:1.2rem;
+    text-align: centerr;
+}
+
+/* contact section */
+#contact{
+    display:flex;
+    flex-direction:column;
+    background-color: #000000dc;
+}
+#contact h1{
+    margin:50px;
+}
+.form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+ padding:15px 20px;
+ margin:15px;
+ width:35%;
+ outline:none;
+ border:none;
+ border-radius: 25px;
+}
+#message{
+margin:15px;
+padding:10px;
+border-radius:20px;
+
+}
+#submit{
+    padding:15px 20px;
+    margin:30px;
+    width:15%;
+    border-radius:20px;
+    background-color:#000000dc;
+    color:white;
+    border:none;
+    outline:none;
+}
+#submit:hover{
+    background-color: green;
+    color:white;
+    cursor:pointer;
+}
